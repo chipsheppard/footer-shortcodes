@@ -80,7 +80,7 @@ add_shortcode( 'fs-s', 'fs_s_shortcode' );
 
 
 /**
- * [fs-cys] Copy Symbol, Year & Site Link Shortcode
+ * [fs-cys] Copyright Symbol, Year & Site Link Shortcode
  *
  * Returns the Copyright Symbol followed by the current year followed by the site name linked to the homepage.
  *
