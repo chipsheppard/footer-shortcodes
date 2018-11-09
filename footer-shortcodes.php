@@ -2,7 +2,9 @@
 /**
  * Footer Shortcodes Plugin
  *
- * @package footer-shortcodes
+ * @link    http://sheppco.com
+ * @since   1.0.0
+ * @package Footer_Shortcodes
  */
 
 /**
