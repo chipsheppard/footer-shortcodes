@@ -12,8 +12,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Footer Shortcodes
- * Plugin URI:        https://chipsheppard.com/projects
- * Description:       This plugin gives you 4 shortcodes to use in your footer, the copyright symbol, the year, the site title linked to the homepage AND a combined shortcode that shows copyright year sitetitle. The year will always update automatically.
+ * Description:       Shortcodes for your footer to display the copyright symbol, the year and the site title linked to the homepage.
  * Version:           1.0.0
  * Author:            Chip Sheppard
  * Author URI:        https://chipsheppard.com/
