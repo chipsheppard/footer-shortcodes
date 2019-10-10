@@ -1,94 +1,80 @@
 <?php
 /**
- * Footer Shortcodes Plugin
+ * Footer Shortcodes
  *
- * @link    http://sheppco.com
- * @since   1.0.0
- * @package Footer_Shortcodes
- */
-
-/**
- * Plugin Name: Footer Shortcodes
- * Plugin URI: https://sheppco.com/plugins/
- * Description: Enables shortcodes in text widgets. Provides Shortcodes to display the Copyright symbol, the Current Year and a Site link.
- * Version: 1.0.0
- * Author: Chip Sheppard
- * Author URI: https://sheppco.com
- * License: GPLv2
- */
-
-/*
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-*/
-
-
-/*
- * Enable shortcodes in text widgets.
- */
-add_filter( 'widget_text', 'do_shortcode' );
-
-
-/**
- * [c] Copyright Symbol Shortcode
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
  *
- * Returns the Copyright Symbol.
+ * @since             1.0.0
+ * @package           Footer_Shortcodes
  *
- * @return string  HTML for a Copyright symbol
+ * @wordpress-plugin
+ * Plugin Name:       Footer Shortcodes
+ * Plugin URI:        https://chipsheppard.com/projects
+ * Description:       This plugin gives you 4 shortcodes to use in your footer, the copyright symbol, the year, the site title linked to the homepage AND a combined shortcode that shows copyright year sitetitle. The year will always update automatically.
+ * Version:           1.0.0
+ * Author:            Chip Sheppard
+ * Author URI:        https://chipsheppard.com/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       footer-shortcodes
+ * Domain Path:       /languages
  */
-function fs_c_shortcode() {
-	return '&copy;';
+
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
-add_shortcode( 'fs-c', 'fs_c_shortcode' );
-
 
 /**
- * [y] Year Shortcode
- *
- * Returns the Current Year as a string in four digits.
- *
- * @return string  Current Year
+ * Currently plugin version.
+ * Start at version 1.0.0 and use SemVer - https://semver.org
+ * Rename this for your plugin and update it as you release new versions.
  */
-function fs_y_shortcode() {
-	$year = date( 'Y' );
-	return $year;
-}
-add_shortcode( 'fs-y', 'fs_y_shortcode' );
-
+define( 'FOOTER_SHORTCODES_VERSION', '1.0.0' );
 
 /**
- * [s] - Site Link Shortcode
- *
- * Returns the Site Name linked to the homepage.
- *
- * @return string  HTML for a linked site title
+ * The code that runs during plugin activation.
+ * This action is documented in includes/class-footer-shortcodes-activator.php
  */
-function fs_s_shortcode() {
-	 $sitelink = '<a href="' . esc_url( home_url() ) . '" rel="home">' . get_bloginfo( 'name' ) . '</a>';
-	 return $sitelink;
+function activate_footer_shortcodes() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-footer-shortcodes-activator.php';
+	Footer_Shortcodes_Activator::activate();
 }
-add_shortcode( 'fs-s', 'fs_s_shortcode' );
-
 
 /**
- * [fs-cys] Copyright Symbol, Year & Site Link Shortcode
- *
- * Returns the Copyright Symbol followed by the current year followed by the site name linked to the homepage.
- *
- * @return string HTML for a Copyright symbol, blank, current year
+ * The code that runs during plugin deactivation.
+ * This action is documented in includes/class-footer-shortcodes-deactivator.php
  */
-function fs_cys_shortcode() {
-	return fs_c_shortcode() . ' ' . fs_y_shortcode() . ' ' . fs_s_shortcode();
+function deactivate_footer_shortcodes() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-footer-shortcodes-deactivator.php';
+	Footer_Shortcodes_Deactivator::deactivate();
 }
-add_shortcode( 'fs-cys', 'fs_cys_shortcode' );
+
+register_activation_hook( __FILE__, 'activate_footer_shortcodes' );
+register_deactivation_hook( __FILE__, 'deactivate_footer_shortcodes' );
+
+/**
+ * The core plugin class that is used to define internationalization,
+ * admin-specific hooks, and public-facing site hooks.
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-footer-shortcodes.php';
+
+/**
+ * Begins execution of the plugin.
+ *
+ * Since everything within the plugin is registered via hooks,
+ * then kicking off the plugin from this point in the file does
+ * not affect the page life cycle.
+ *
+ * @since    1.0.0
+ */
+function run_footer_shortcodes() {
+
+	$plugin = new Footer_Shortcodes();
+	$plugin->run();
+
+}
+run_footer_shortcodes();
