@@ -22,13 +22,27 @@
 class Footer_Shortcodes_Deactivator {
 
 	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
+	 * Deregister all the shortcodes.
 	 *
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
+
+		if ( shortcode_exists( 'footer-shortcodes' ) ) {
+			remove_shortcode( 'footer-shortcodes' );
+		}
+
+		if ( shortcode_exists( 'footer-shortcodes-copyright' ) ) {
+			remove_shortcode( 'footer-shortcodes-copyright' );
+		}
+
+		if ( shortcode_exists( 'footer-shortcodes-year' ) ) {
+			remove_shortcode( 'footer-shortcodes-year' );
+		}
+
+		if ( shortcode_exists( 'footer-shortcodes-site' ) ) {
+			remove_shortcode( 'footer-shortcodes-site' );
+		}
 
 	}
 

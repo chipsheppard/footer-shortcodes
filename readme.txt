@@ -12,8 +12,8 @@ Provides Shortcodes to display the Copyright symbol, the Current Year and a site
 
 == Description ==
 
-Footer Shortcodes provides an easy way to add the standard footer notice to your website - copyright symbol, Year, Site Title.
-There are separate shortcodes for each element so you can arrange and punctuate them however you like and there is a forth shortcode that combines the three elements in the standard way.
+Footer Shortcodes provides an easy way to add the standard footer notice to your website - copyright symbol, Year, Site Title (linked to homepage).
+There are separate shortcodes for each element so you can arrange and punctuate them however you like and there is a forth shortcode that combines the three elements in the standard way - © thisyear siteTitle.
 It uses the PHP date() function so the year will always be up to date.
 Footer Shortcodes will work in content and text widgets only. Footer Shortcodes will NOT work in Titles, WP Custom Fields, Site Title, Site Description, Widget Titles, Menus, Headers and the HTML `<title>` element.
 

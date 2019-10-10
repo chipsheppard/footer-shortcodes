@@ -32,27 +32,27 @@ class Footer_Shortcodes {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      Footer_Shortcodes_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    Footer_Shortcodes_Loader $loader Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    string   $plugin_name The string used to uniquely identify this plugin.
 	 */
 	protected $plugin_name;
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    string   $version     The current version of the plugin.
 	 */
 	protected $version;
 
@@ -63,7 +63,7 @@ class Footer_Shortcodes {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since    1.0.0
+	 * @since  1.0.0
 	 */
 	public function __construct() {
 		if ( defined( 'FOOTER_SHORTCODES_VERSION' ) ) {
@@ -88,29 +88,25 @@ class Footer_Shortcodes {
 	 * - Footer_Shortcodes_I18n. Defines internationalization functionality.
 	 * - Footer_Shortcodes_Public. Defines all hooks for the public side of the site.
 	 *
-	 * Create an instance of the loader which will be used to register the hooks
-	 * with WordPress.
+	 * Create an instance of the loader which will be used to register the hooks.
 	 *
-	 * @since    1.0.0
-	 * @access   private
+	 * @since  1.0.0
+	 * @access private
 	 */
 	private function load_dependencies() {
 
 		/**
-		 * The class responsible for orchestrating the actions and filters of the
-		 * core plugin.
+		 * The class responsible for orchestrating the actions and filters.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-footer-shortcodes-loader.php';
 
 		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
+		 * The class responsible for defining internationalization functionality.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-footer-shortcodes-i18n.php';
 
 		/**
-		 * The class responsible for defining all actions that occur in the public-facing
-		 * side of the site.
+		 * The class responsible for defining actions on the public-facing side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-footer-shortcodes-public.php';
 
@@ -121,11 +117,10 @@ class Footer_Shortcodes {
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Footer_Shortcodes_I18n class in order to set the domain and to register the hook
-	 * with WordPress.
+	 * Uses the Footer_Shortcodes_I18n class in order to set the domain and register the hook
 	 *
-	 * @since    1.0.0
-	 * @access   private
+	 * @since  1.0.0
+	 * @access private
 	 */
 	private function set_locale() {
 
@@ -136,11 +131,10 @@ class Footer_Shortcodes {
 	}
 
 	/**
-	 * Register all of the hooks related to the public-facing functionality
-	 * of the plugin.
+	 * Register all of the hooks related to public-facing functionality.
 	 *
-	 * @since    1.0.0
-	 * @access   private
+	 * @since  1.0.0
+	 * @access private
 	 */
 	private function define_public_hooks() {
 
@@ -155,7 +149,7 @@ class Footer_Shortcodes {
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since  1.0.0
 	 */
 	public function run() {
 		$this->loader->run();
@@ -165,8 +159,8 @@ class Footer_Shortcodes {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since     1.0.0
-	 * @return    string    The name of the plugin.
+	 * @since  1.0.0
+	 * @return string   The name of the plugin.
 	 */
 	public function get_plugin_name() {
 		return $this->plugin_name;
@@ -175,8 +169,8 @@ class Footer_Shortcodes {
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
-	 * @since     1.0.0
-	 * @return    Footer_Shortcodes_Loader    Orchestrates the hooks of the plugin.
+	 * @since  1.0.0
+	 * @return Footer_Shortcodes_Loader Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;
@@ -185,8 +179,8 @@ class Footer_Shortcodes {
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
-	 * @since     1.0.0
-	 * @return    string    The version number of the plugin.
+	 * @since  1.0.0
+	 * @return string   The version number of the plugin.
 	 */
 	public function get_version() {
 		return $this->version;
