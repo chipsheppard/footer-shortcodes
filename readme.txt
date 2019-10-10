@@ -1,10 +1,15 @@
-=== Plugin Name ===
+=== Footer Shortcodes ===
+
 Contributors: ultranorman
-Donate link: https://chipsheppard.com/
-Tags: comments, spam
+Plugin Name: Footer Shortcodes
+Plugin URI: https://chipsheppard.com/projects/
+Tags: shortcodes
+Author: Chip Sheppard
+Author URI: https://chipsheppard.com/
 Requires at least: 3.0.1
 Tested up to: 5.2.3
 Stable tag: 1.0.0
+Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
