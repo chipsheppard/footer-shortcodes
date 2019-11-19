@@ -2,11 +2,10 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://chipsheppard.com/
  * @since      1.0.0
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/public
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/public
  */
 
 /**
@@ -15,9 +14,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/public
- * @author     Chip Sheppard <chipsheppard@gmail.com>
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/public
  */
 class Footer_Shortcodes_Public {
 

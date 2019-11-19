@@ -8,12 +8,12 @@
  * that starts the plugin.
  *
  * @since             1.0.0
- * @package           Footer_Shortcodes
+ * @package           footer-shortcodes
  *
  * @wordpress-plugin
  * Plugin Name:       Footer Shortcodes
  * Description:       Shortcodes for your footer to display the copyright symbol, the year and the site title linked to the homepage.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Chip Sheppard
  * Author URI:        https://chipsheppard.com/
  * License:           GPL-2.0+
@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Current plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  */
-define( 'FOOTER_SHORTCODES_VERSION', '1.0.0' );
+define( 'FOOTER_SHORTCODES_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.

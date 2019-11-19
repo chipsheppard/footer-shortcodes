@@ -5,11 +5,10 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       https://chipsheppard.com/
  * @since      1.0.0
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 
 /**
@@ -19,9 +18,8 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
- * @author     Chip Sheppard <chipsheppard@gmail.com>
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 class Footer_Shortcodes_I18n {
 

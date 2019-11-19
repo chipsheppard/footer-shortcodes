@@ -2,11 +2,10 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       https://chipsheppard.com/
  * @since      1.0.0
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 
 /**
@@ -16,9 +15,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
- * @author     Chip Sheppard <chipsheppard@gmail.com>
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 class Footer_Shortcodes_Loader {
 

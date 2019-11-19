@@ -5,11 +5,10 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://chipsheppard.com/
  * @since      1.0.0
  *
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 
 /**
@@ -22,9 +21,8 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Footer_Shortcodes
- * @subpackage Footer_Shortcodes/includes
- * @author     Chip Sheppard <chipsheppard@gmail.com>
+ * @package    footer-shortcodes
+ * @subpackage footer-shortcodes/includes
  */
 class Footer_Shortcodes {
 

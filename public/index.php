@@ -1,1 +1,9 @@
-<?php // Silence is golden
+<?php
+/**
+ * Silence is golden
+ *
+ * @since   1.0.0
+ * @package footer-shortcodes
+ */
+
+/* \o/ */
