@@ -8,10 +8,10 @@ Author: Chip Sheppard
 Author URI: https://chipsheppard.com
 Donate link: https://chipsheppard.com/projects
 Requires at least: 3.0.1
-Tested up to: 5.3
+Tested up to: 5.4.1
 Requires PHP: 5.4
-Stable tag: 1.0.1
-Version: 1.0.1
+Stable tag: 1.0.2
+Version: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,16 +25,9 @@ There are separate shortcodes for each element so you can arrange and punctuate 
 
 There is also a forth shortcode that combines the three elements in the standard way - © thisyear siteTitle.
 
-`[footer-shortcode-copyright]` to display the copyright (&copy;) symbol.
-`[footer-shortcode-year]` to display the current year.
-`[footer-shortcode-site]` to display the site title linked to the homepage.
-`[footer-shortcode]` to display all three - symbol year title-link.
-
 Footer Shortcodes uses the PHP date() function so the year will always be current.
 
-Footer Shortcodes will work in content and text widgets only.
-
-Footer Shortcodes will **NOT** work in Titles, WP Custom Fields, Site Title, Site Description, Widget Titles, Menus, Headers and the HTML `<title>` element.
+Shortcodes work in content and widgets but will **NOT** work in Titles, WP Custom Fields, Site Title, Site Description, Widget Titles, Menus, Headers and the HTML `<title>` element.
 
 == Installation ==
 
@@ -43,7 +36,7 @@ Footer Shortcodes will **NOT** work in Titles, WP Custom Fields, Site Title, Sit
 1. Insert `[footer-shortcode-copyright]`, `[footer-shortcode-year]`, `[footer-shortcode-site]` and/or `[footer-shortcode]` shortcodes as many times as you wish in one or more WordPress Pages, Posts or text widgets.
 
 == Frequently Asked Questions ==
-What are the shortcodes?
+= What are the shortcodes? =
 `[footer-shortcode-copyright]` to display the copyright (&copy;) symbol.
 `[footer-shortcode-year]` to display the current year.
 `[footer-shortcode-site]` to display the site title linked to the homepage.

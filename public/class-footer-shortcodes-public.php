@@ -47,7 +47,7 @@ class Footer_Shortcodes_Public {
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->version     = $version;
 	}
 
 	/**
@@ -78,8 +78,8 @@ class Footer_Shortcodes_Public {
 	 * @return string HTML for a linked site title
 	 */
 	public function fs_s_shortcode() {
-		 $sitelink = '<a href="' . esc_url( home_url() ) . '" rel="home">' . get_bloginfo( 'name' ) . '</a>';
-		 return $sitelink;
+		$sitelink = '<a href="' . esc_url( home_url() ) . '" rel="home">' . get_bloginfo( 'name' ) . '</a>';
+		return $sitelink;
 	}
 
 	/**

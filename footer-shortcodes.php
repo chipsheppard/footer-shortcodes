@@ -13,7 +13,7 @@
  * @wordpress-plugin
  * Plugin Name:       Footer Shortcodes
  * Description:       Shortcodes for your footer to display the copyright symbol, the year and the site title linked to the homepage.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Chip Sheppard
  * Author URI:        https://chipsheppard.com/
  * License:           GPL-2.0+
