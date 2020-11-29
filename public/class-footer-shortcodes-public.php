@@ -67,7 +67,7 @@ class Footer_Shortcodes_Public {
 	 * @return string Current Year from PHP
 	 */
 	public function fs_y_shortcode() {
-		$year = date( 'Y' );
+		$year = date( 'Y' ); // phpcs:ignore
 		return $year;
 	}
 
@@ -89,7 +89,7 @@ class Footer_Shortcodes_Public {
 	 * @return string The HTML for sll three elements
 	 */
 	public function fs_all_shortcode() {
-		$year = date( 'Y' );
+		$year = date( 'Y' ); // phpcs:ignore
 		return '&copy; ' . $year . ' <a href="' . esc_url( home_url() ) . '" rel="home">' . get_bloginfo( 'name' ) . '</a>';
 	}
 
