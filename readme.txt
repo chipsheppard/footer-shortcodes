@@ -10,12 +10,12 @@ Donate link: https://chipsheppard.com/projects
 Requires at least: 3.0.1
 Tested up to: 5.6
 Requires PHP: 5.4
-Stable tag: 1.0.3
-Version: 1.0.3
+Stable tag: 1.0.4
+Version: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Provides Shortcodes to display the Copyright symbol, the Current Year and a site link.
+Provides shortcodes to display the copyright symbol, the current year and a site link.
 
 == Description ==
 
